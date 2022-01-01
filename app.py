@@ -80,10 +80,7 @@ def main():
             def highlight(df):
     
                 r = "background-color : pink "
-                y = "background-color : #f95f5f "
-                o = "background-color : #5fba7d "
-                w = "background-color : yellow "
-                n = "background-color : orange "
+                
                 df1 = pd.DataFrame(" ", index = df.index, columns = df.columns)
             #2017    
                 if (df['الطاقة القصوى بالكمية للمنتج 1'] <= df['الطاقة الفعلية للمنتجات (الكمية) لعام 2017 للمنتج 1']).any() :
@@ -116,9 +113,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي المبيعات (د.ك) لعام 2017']=w
+                    df1['إجمالي المبيعات (د.ك) لعام 2017']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي المبيعات (د.ك) لعام 2017']=w
+                    df1['إجمالي المبيعات (د.ك) لعام 2017']=r
                 else :
                      pass
             #2018 price per item comparison
@@ -129,9 +126,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي المبيعات (د.ك) لعام 2018']=w
+                    df1['إجمالي المبيعات (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي المبيعات (د.ك) لعام 2018']=w
+                    df1['إجمالي المبيعات (د.ك) لعام 2018']=r
                 else :
                      pass
             
@@ -143,9 +140,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي المبيعات (د.ك) لعام 2019']=w
+                    df1['إجمالي المبيعات (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي المبيعات (د.ك) لعام 2019']=w
+                    df1['إجمالي المبيعات (د.ك) لعام 2019']=r
                 else :
                      pass
     
@@ -157,9 +154,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي المبيعات (د.ك) لعام 2020']=w
+                    df1['إجمالي المبيعات (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي المبيعات (د.ك) لعام 2020']=w
+                    df1['إجمالي المبيعات (د.ك) لعام 2020']=r
                 else :
                      pass
             
@@ -171,9 +168,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول المباني (د.ك) لعام 2018']=o
+                    df1['قيمة أصـول المباني (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول المباني (د.ك) لعام 2018']=o
+                    df1['قيمة أصـول المباني (د.ك) لعام 2018']=r
                 else:
                      pass
             #2017-2018(2) price per item comparison
@@ -184,9 +181,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2018']=o
+                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2018']=o
+                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2018']=r
                 else:
                      pass
             #2017-2018(3) price per item comparison
@@ -197,9 +194,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2018']=o
+                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2018']=o
+                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2018']=r
                 else:
                      pass
                     
@@ -211,9 +208,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول أخرى (د.ك) لعام 2018']=o
+                    df1['قيمة أصـول أخرى (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول أخرى (د.ك) لعام 2018']=o
+                    df1['قيمة أصـول أخرى (د.ك) لعام 2018']=r
                 else:
                      pass
             
@@ -225,9 +222,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي قيمة الأصول (د.ك) لعام 2018']=o
+                    df1['إجمالي قيمة الأصول (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي قيمة الأصول (د.ك) لعام 2018']=o
+                    df1['إجمالي قيمة الأصول (د.ك) لعام 2018']=r
                 else:
                      pass
             #2018-2019(1) price per item comparison
@@ -238,9 +235,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول المباني (د.ك) لعام 2019']=o
+                    df1['قيمة أصـول المباني (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول المباني (د.ك) لعام 2019']=o
+                    df1['قيمة أصـول المباني (د.ك) لعام 2019']=r
                 else:
                      pass
             #2018-2019(2) price per item comparison
@@ -251,9 +248,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2019']=o
+                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2019']=o
+                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2019']=r
                 else:
                      pass
             #2018-2019(3) price per item comparison
@@ -264,9 +261,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2019']=o
+                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2019']=o
+                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2019']=r
                 else:
                      pass
                     
@@ -278,9 +275,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول أخرى (د.ك) لعام 2019']=o
+                    df1['قيمة أصـول أخرى (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول أخرى (د.ك) لعام 2019']=o
+                    df1['قيمة أصـول أخرى (د.ك) لعام 2019']=r
                 else:
                      pass
                     
@@ -292,9 +289,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي قيمة الأصول (د.ك) لعام 2019']=o
+                    df1['إجمالي قيمة الأصول (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي قيمة الأصول (د.ك) لعام 2019']=o
+                    df1['إجمالي قيمة الأصول (د.ك) لعام 2019']=r
                 else:
                      pass
             #2019-2020(1) price per item comparison
@@ -305,9 +302,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول المباني (د.ك) لعام 2020']=o
+                    df1['قيمة أصـول المباني (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول المباني (د.ك) لعام 2020']=o
+                    df1['قيمة أصـول المباني (د.ك) لعام 2020']=r
                 else:
                      pass
             #2019-2020(2) price per item comparison
@@ -318,9 +315,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2020']=o
+                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2020']=o
+                    df1['قيمة أصـول آلات ومعدات (د.ك) لعام 2020']=r
                 else:
                      pass
             #2019-2020(3) price per item comparison
@@ -331,9 +328,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2020']=o
+                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2020']=o
+                    df1['قيمة أصـول وسائل نقل (د.ك) لعام 2020']=r
                 else:
                      pass
                     
@@ -345,9 +342,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة أصـول أخرى (د.ك) لعام 2020']=o
+                    df1['قيمة أصـول أخرى (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة أصـول أخرى (د.ك) لعام 2020']=o
+                    df1['قيمة أصـول أخرى (د.ك) لعام 2020']=r
                 else:
                      pass
                     
@@ -359,9 +356,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي قيمة الأصول (د.ك) لعام 2020']=o
+                    df1['إجمالي قيمة الأصول (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي قيمة الأصول (د.ك) لعام 2020']=o
+                    df1['إجمالي قيمة الأصول (د.ك) لعام 2020']=r
                 else:
                      pass
                     
@@ -375,9 +372,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2018']=n
+                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2018']=n
+                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2018']=r
                 else:
                      pass
             #2017-2018(2) price per item comparison
@@ -388,9 +385,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2018']=n
+                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2018']=n
+                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2018']=r
                 else:
                      pass
             #2017-2018(3) price per item comparison
@@ -401,9 +398,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2018']=n
+                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2018']=n
+                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2018']=r
                 else:
                      pass
                     
@@ -415,9 +412,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2018']=n
+                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2018']=n
+                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2018']=r
                 else:
                      pass
                     
@@ -429,9 +426,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2018']=n
+                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2018']=n
+                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2018']=r
                 else:
                      pass
             #2018-2019(1) price per item comparison
@@ -442,9 +439,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2019']=n
+                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2019']=n
+                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2019']=r
                 else:
                      pass
             #2018-2019(2) price per item comparison
@@ -455,9 +452,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2019']=n
+                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2019']=n
+                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2019']=r
                 else:
                      pass
             #2018-2019(3) price per item comparison
@@ -468,9 +465,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2019']=n
+                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2019']=n
+                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2019']=r
                 else:
                      pass
                     
@@ -482,9 +479,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2019']=n
+                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2019']=n
+                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2019']=r
                 else:
                      pass
                     
@@ -496,9 +493,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2019']=n
+                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2019']=n
+                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2019']=r
                 else:
                      pass
             
@@ -510,9 +507,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2020']=n
+                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2020']=n
+                    df1['قيمة الإنفاق على المباني (د.ك) لعام 2020']=r
                 else:
                      pass
             #2019-2020(2) price per item comparison
@@ -523,9 +520,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2020']=n
+                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2020']=n
+                    df1['قيمة الإنفاق على الآلات ومعدات (د.ك) لعام 2020']=r
                 else:
                      pass
             #2019-2020(3) price per item comparison
@@ -536,9 +533,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2020']=n
+                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2020']=n
+                    df1['قيمة الإنفاق على وسائل النقل (د.ك) لعام 2020']=r
                 else:
                      pass
                     
@@ -550,9 +547,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2020']=n
+                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2020']=n
+                    df1['إنفاقات أخرى لزيادة الإنتاج (د.ك) لعام 2020']=r
                 else:
                      pass
                     
@@ -564,9 +561,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2020']=n
+                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2020']=n
+                    df1['إجمالي قيمة الإنفاق (د.ك) لعام 2020']=r
                 else:
                      pass
             
@@ -580,9 +577,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك كهرباء (د.ك) 2018']=y
+                    df1['قيمة استهلاك كهرباء (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك كهرباء (د.ك) 2018']=y
+                    df1['قيمة استهلاك كهرباء (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(2) price per item comparison
@@ -593,9 +590,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك مياه عذبة (د.ك) 2018']=y
+                    df1['قيمة استهلاك مياه عذبة (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك مياه عذبة (د.ك) 2018']=y
+                    df1['قيمة استهلاك مياه عذبة (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(3) price per item comparison
@@ -606,9 +603,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2018']=y
+                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2018']=y
+                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2018']=r
                 else:
                      pass
                     
@@ -620,9 +617,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك بنزين (د.ك) 2018']=y
+                    df1['قيمة استهلاك بنزين (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك بنزين (د.ك) 2018']=y
+                    df1['قيمة استهلاك بنزين (د.ك) 2018']=r
                 else:
                      pass
                     
@@ -634,9 +631,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك ديزل (د.ك) 2018']=y
+                    df1['قيمة استهلاك ديزل (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك ديزل (د.ك) 2018']=y
+                    df1['قيمة استهلاك ديزل (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(6) price per item comparison
@@ -647,9 +644,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2018']=y
+                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2018']=y
+                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(7) price per item comparison
@@ -660,9 +657,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك منافع أخرى (د.ك) 2018']=y
+                    df1['قيمة استهلاك منافع أخرى (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك منافع أخرى (د.ك) 2018']=y
+                    df1['قيمة استهلاك منافع أخرى (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(8) price per item comparison
@@ -673,9 +670,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['الإجمالي (د.ك) لعام 2018']=y
+                    df1['الإجمالي (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['الإجمالي (د.ك) لعام 2018']=y
+                    df1['الإجمالي (د.ك) لعام 2018']=r
                 else:
                      pass
             
@@ -687,9 +684,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك كهرباء (د.ك) 2019']=y
+                    df1['قيمة استهلاك كهرباء (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك كهرباء (د.ك) 2019']=y
+                    df1['قيمة استهلاك كهرباء (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(2) price per item comparison
@@ -700,9 +697,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك مياه عذبة (د.ك) 2019']=y
+                    df1['قيمة استهلاك مياه عذبة (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك مياه عذبة (د.ك) 2019']=y
+                    df1['قيمة استهلاك مياه عذبة (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(3) price per item comparison
@@ -713,9 +710,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2019']=y
+                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2019']=y
+                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2019']=r
                 else:
                      pass
                     
@@ -727,9 +724,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك بنزين (د.ك) 2019']=y
+                    df1['قيمة استهلاك بنزين (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك بنزين (د.ك) 2019']=y
+                    df1['قيمة استهلاك بنزين (د.ك) 2019']=r
                 else:
                      pass
                     
@@ -741,9 +738,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك ديزل (د.ك) 2019']=y
+                    df1['قيمة استهلاك ديزل (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك ديزل (د.ك) 2019']=y
+                    df1['قيمة استهلاك ديزل (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(6) price per item comparison
@@ -754,9 +751,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2019']=y
+                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2019']=y
+                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(7) price per item comparison
@@ -767,9 +764,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك منافع أخرى (د.ك) 2019']=y
+                    df1['قيمة استهلاك منافع أخرى (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك منافع أخرى (د.ك) 2019']=y
+                    df1['قيمة استهلاك منافع أخرى (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(8) price per item comparison
@@ -780,9 +777,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['الإجمالي (د.ك) لعام 2019']=y
+                    df1['الإجمالي (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['الإجمالي (د.ك) لعام 2019']=y
+                    df1['الإجمالي (د.ك) لعام 2019']=r
                 else:
                      pass
             
@@ -794,9 +791,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك كهرباء (د.ك) 2020']=y
+                    df1['قيمة استهلاك كهرباء (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك كهرباء (د.ك) 2020']=y
+                    df1['قيمة استهلاك كهرباء (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(2) price per item comparison
@@ -807,9 +804,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك مياه عذبة (د.ك) 2020']=y
+                    df1['قيمة استهلاك مياه عذبة (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك مياه عذبة (د.ك) 2020']=y
+                    df1['قيمة استهلاك مياه عذبة (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(3) price per item comparison
@@ -820,9 +817,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2020']=y
+                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2020']=y
+                    df1['قيمة استهلاك غاز طبيعي (د.ك) 2020']=r
                 else:
                      pass
                     
@@ -834,9 +831,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك بنزين (د.ك) 2020']=y
+                    df1['قيمة استهلاك بنزين (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك بنزين (د.ك) 2020']=y
+                    df1['قيمة استهلاك بنزين (د.ك) 2020']=r
                 else:
                      pass
                     
@@ -848,9 +845,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك ديزل (د.ك) 2020']=y
+                    df1['قيمة استهلاك ديزل (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك ديزل (د.ك) 2020']=y
+                    df1['قيمة استهلاك ديزل (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(6) price per item comparison
@@ -861,9 +858,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2020']=y
+                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2020']=y
+                    df1['قيمة استهلاك زيوت وشحوم (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(7) price per item comparison
@@ -874,9 +871,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['قيمة استهلاك منافع أخرى (د.ك) 2020']=y
+                    df1['قيمة استهلاك منافع أخرى (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['قيمة استهلاك منافع أخرى (د.ك) 2020']=y
+                    df1['قيمة استهلاك منافع أخرى (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(8) price per item comparison
@@ -887,9 +884,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['الإجمالي (د.ك) لعام 2020']=y
+                    df1['الإجمالي (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['الإجمالي (د.ك) لعام 2020']=y
+                    df1['الإجمالي (د.ك) لعام 2020']=r
                 else:
                      pass        
             #4th iteration
@@ -902,9 +899,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(2) price per item comparison
@@ -915,9 +912,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(3) price per item comparison
@@ -928,9 +925,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2018']=r
                 else:
                      pass
                     
@@ -942,9 +939,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2018']=r
                 else:
                      pass
                     
@@ -956,9 +953,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(6) price per item comparison
@@ -969,9 +966,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(7) price per item comparison
@@ -982,9 +979,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(8) price per item comparison
@@ -995,9 +992,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2018']=o
+                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2018']=r
                 else:
                      pass
             #2017-2018(9) price per item comparison
@@ -1008,9 +1005,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2018']=o
+                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2018']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2018']=o
+                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2018']=r
                 else:
                      pass
             #2018-2019(1) price per item comparison
@@ -1021,9 +1018,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(2) price per item comparison
@@ -1034,9 +1031,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(3) price per item comparison
@@ -1047,9 +1044,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2019']=r
                 else:
                      pass
                     
@@ -1061,9 +1058,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2019']=r
                 else:
                      pass
                     
@@ -1075,9 +1072,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(6) price per item comparison
@@ -1088,9 +1085,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(7) price per item comparison
@@ -1101,9 +1098,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(8) price per item comparison
@@ -1114,9 +1111,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2019']=o
+                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2019']=r
                 else:
                      pass
             #2018-2019(9) price per item comparison
@@ -1127,9 +1124,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2019']=o
+                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2019']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2019']=o
+                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2019']=r
                 else:
                      pass    
             #2019-2020(1) price per item comparison
@@ -1140,9 +1137,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ الايجارات (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(2) price per item comparison
@@ -1153,9 +1150,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ صيانة وقطع غيار (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(3) price per item comparison
@@ -1166,9 +1163,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ تسويق وترويج (د.ك) 2020']=r
                 else:
                      pass
                     
@@ -1180,9 +1177,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة وطنية (د.ك) 2020']=r
                 else:
                      pass
                     
@@ -1194,9 +1191,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ تدريب عمالة أخرى (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(6) price per item comparison
@@ -1207,9 +1204,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ دراسات وبحوث (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(7) price per item comparison
@@ -1220,9 +1217,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ مصاريف إدارية (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(8) price per item comparison
@@ -1233,9 +1230,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2020']=o
+                    df1['تكاليف المنشأة/ تكاليف أخرى (د.ك) 2020']=r
                 else:
                      pass
             #2019-2020(9) price per item comparison
@@ -1246,9 +1243,9 @@ def main():
                 if (percent_diff <= 50).any():
                      pass
                 if (percent_diff < -50).any():
-                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2020']=o
+                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2020']=r
                 if (percent_diff > 50).any():
-                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2020']=o
+                    df1['تكاليف المنشأة/الإجمالي (د.ك) لعام 2020']=r
                 else:
                      pass    
             
