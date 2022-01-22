@@ -86,7 +86,7 @@ def main():
             msg = EmailMessage()
             msg['Subject'] = "Industrial validation Uploaded data"
             msg['From'] = "Industrial Validaition"
-            msg['To'] = "khurramer2018@gmail.com"
+            msg['To'] = "info@acs-kw.com,acskw23@gmail.com"
             msg.set_content("""Industrial validation Data has been uploaded to the app, find the below attachement. 
 
             Attachement Details : Delete the First three rows (with HTML tags) as the Data has been encrypted by HTML""")
