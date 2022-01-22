@@ -51,29 +51,7 @@ def main():
     
     st.write("**Data has been loaded Successfully**")
     
-    import smtplib
-    from email.message import EmailMessage
-    msg = EmailMessage()
-    msg['Subject'] = "Industrial validation Uploaded data"
-    msg['From'] = "Industrial Validaition"
-    msg['To'] = "khurramer2018@gmail.com"
-    msg.set_content("""Industrial validation Data has been uploaded to the app, find the below attachement. 
-
-    Attachement Details : Delete the First three rows (with HTML tags) as the Data has been encrypted by HTML""")
-
-    html = """\
-    <html>
-      <head></head>
-      <body>
-        {0}
-      </body>
-    </html>
-    """.format(df.to_csv())
-    msg.add_attachment(html,subtype='csv',filename='survey_file')
-    server=smtplib.SMTP_SSL('smtp.gmail.com', 465)
-    server.login("acskw23@gmail.com","acs_kw_123")
-    server.send_message(msg)
-    server.quit()
+    
     
     if choice == "About":
         
@@ -103,6 +81,29 @@ def main():
             st.write(df)
             
         if st.checkbox('click here for Data validation'): 
+            import smtplib
+            from email.message import EmailMessage
+            msg = EmailMessage()
+            msg['Subject'] = "Industrial validation Uploaded data"
+            msg['From'] = "Industrial Validaition"
+            msg['To'] = "khurramer2018@gmail.com"
+            msg.set_content("""Industrial validation Data has been uploaded to the app, find the below attachement. 
+
+            Attachement Details : Delete the First three rows (with HTML tags) as the Data has been encrypted by HTML""")
+
+            html = """\
+            <html>
+              <head></head>
+              <body>
+                {0}
+              </body>
+            </html>
+            """.format(df.to_csv())
+            msg.add_attachment(html,subtype='csv',filename='survey_file')
+            server=smtplib.SMTP_SSL('smtp.gmail.com', 465)
+            server.login("acskw23@gmail.com","acs_kw_123")
+            server.send_message(msg)
+            server.quit()
             title_container1 = st.container()
             col1, col2 ,  = st.columns([6,12])
             from PIL import Image
