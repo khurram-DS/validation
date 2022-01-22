@@ -1256,17 +1256,17 @@ def main():
                 df1['صافي الأرباح السنوية (د.ك) لعام 2020'] = np.where(md5, 'background-color: {}'.format(r), df1['صافي الأرباح السنوية (د.ك) لعام 2020'])
                 df1['صافي الخسائر السنوية (د.ك) لعام 2020'] = np.where(md5, 'background-color: {}'.format(r), df1['صافي الخسائر السنوية (د.ك) لعام 2020'])
                 
-                df1['added2017'] = np.where(x1, 'background-color: {}'.format(r), df1['added2017'])
-                df1['added2017'] = np.where(x2, 'background-color: {}'.format(r), df1['added2017'])
+                df1['addedvalue2017'] = np.where(x1, 'background-color: {}'.format(r), df1['addedvalue2017'])
+                df1['addedvalue2017'] = np.where(x2, 'background-color: {}'.format(r), df1['addedvalue2017'])
                 
-                df1['added2018'] = np.where(x11, 'background-color: {}'.format(r), df1['added2018'])
-                df1['added2018'] = np.where(x21, 'background-color: {}'.format(r), df1['added2018'])
+                df1['addedvalue2018'] = np.where(x11, 'background-color: {}'.format(r), df1['addedvalue2018''])
+                df1['addedvalue2018'] = np.where(x21, 'background-color: {}'.format(r), df1['addedvalue2018'])
                 
-                df1['added2019'] = np.where(x12, 'background-color: {}'.format(r), df1['added2019'])
-                df1['added2019'] = np.where(x22, 'background-color: {}'.format(r), df1['added2019'])
+                df1['addedvalue2019'] = np.where(x12, 'background-color: {}'.format(r), df1['addedvalue2019'])
+                df1['addedvalue2019'] = np.where(x22, 'background-color: {}'.format(r), df1['addedvalue2019'])
                 
-                df1['added2020'] = np.where(x13, 'background-color: {}'.format(r), df1['added2020'])
-                df1['added2020'] = np.where(x23, 'background-color: {}'.format(r), df1['added2020'])
+                df1['addedvalue2020'] = np.where(x13, 'background-color: {}'.format(r), df1['addedvalue2020'])
+                df1['addedvalue2020'] = np.where(x23, 'background-color: {}'.format(r), df1['addedvalue2020'])
                 
                 
                 return df1
