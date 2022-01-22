@@ -1259,7 +1259,7 @@ def main():
                 df1['addedvalue2017'] = np.where(x1, 'background-color: {}'.format(r), df1['addedvalue2017'])
                 df1['addedvalue2017'] = np.where(x2, 'background-color: {}'.format(r), df1['addedvalue2017'])
                 
-                df1['addedvalue2018'] = np.where(x11, 'background-color: {}'.format(r), df1['addedvalue2018''])
+                df1['addedvalue2018'] = np.where(x11, 'background-color: {}'.format(r), df1['addedvalue2018'])
                 df1['addedvalue2018'] = np.where(x21, 'background-color: {}'.format(r), df1['addedvalue2018'])
                 
                 df1['addedvalue2019'] = np.where(x12, 'background-color: {}'.format(r), df1['addedvalue2019'])
