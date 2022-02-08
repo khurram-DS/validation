@@ -32,6 +32,7 @@ def main():
     activites = ["About","Validity System"]
     choice =st.sidebar.selectbox("Select Activity",activites)
     
+    @st.cache(allow_output_mutation=True)
     def get_df(file):
       # get extension and read file
       extension = file.name.split('.')[1]
